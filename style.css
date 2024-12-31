@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+.width-full{
+    width: 100%;
+}
+.home {
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+.header-offer {
+    background-image: url('./assets/components/header-offer.png'); 
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 40px;
+    height: 60px;
+}
+.hero-logo-menu{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.home-grid{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    background-image: 
+        url('./assets/background/Rectangle 1221.png'),
+        url('./assets/background/Rectangle 1190.png');
+    background-size: 100% 65%;
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    gap: 10px;
+    place-items: center;
+    font-family: 'Montserrat';font-size: 22px;
+    position: relative;
+}
+.style-dots {
+    position: absolute; 
+    bottom: 35%; 
+    left: 10%; 
+    transform: translateY(50%);
+    z-index: 2;
+}
+.home-grid h1{
+    font-size: 18px;
+    color: #0E3939;
+    font-weight: bold;
+}
+.home-grid p{
+    font-size: 13px;
+    font-weight: 100;
+    color: #0E3939;
+}
+
+.image-curve {
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    gap: 30px;
+    position: relative;
+    padding: 20px;
+    height: 300px;  
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    min-height: fit-content;
+    white-space: nowrap;
+}
+
+.image-curve::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.image-curve::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 4px;
+}
+
+.image-curve::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+.image-curve img {
+    width: auto;
+    height: 65px;
+    transform: translateY(calc(-1 * var(--offset, 0px))); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: calc(var(--index, 0));
+    object-fit: contain;  
+}
+
+
+
+
+
+
+
+
